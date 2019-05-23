@@ -1,0 +1,15 @@
+Features:
+-Sentiment analysis
+ -Mood over time GRAPHS
+ -Regressive image dictionary?
+-Dynamic graphs over time (user made)
+ -E.g. energy level: (scale 1-10)
+-Auto gen templates
+-Auto gen directory structure
+-Word clouds
+-Interactive UI
+ -User able to select date range to view analysis over time
+-Markdown language eventually??
+ -Be able to easily embed links and images?
+-Encryption to keep entries private
+ -Eventually way to keep decryption key secret
