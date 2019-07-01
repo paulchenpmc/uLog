@@ -28,7 +28,7 @@ def get_custom_metrics_from_last_entry():
     # If no previous entries, use default custom metrics for format
     if not get_latest_entry_filepath():
         return ''.join(['{}:\n'.format(a) for a in DEFAULT_CUSTOM_METRICS_LIST]) # TODO: Reconsider whether to force default metrics on first journal entry - Could just allow users to discover the feature
-    
+
     custom_metrics_list = []
     with open(get_latest_entry_filepath(), 'r') as infile:
         for line in infile:
