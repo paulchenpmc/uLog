@@ -86,8 +86,23 @@ def create_wordcloud(filepath):
 
 def main():
     print('Running uLog...')
-    # create_wordcloud(get_latest_entry_filepath())
-    # create_new_entry()
+    while True:
+        print('Please select an action...\n\
+  1) Create new journal entry\n\
+  2) Create wordcloud of entries\n\
+  Exit) Exit program\n\
+  ')
+        user_input = input()
+        if user_input == '1':
+            create_new_entry()
+        elif user_input == '2':
+            # TODO - Second level of input here to determine date or dates for wordcloud
+            create_wordcloud(get_latest_entry_filepath())
+        elif user_input.lower() == 'exit':
+            break
+        else:
+            print('Invalid input.')
+        print()
     print('Exiting...')
 
 if __name__ == '__main__':
